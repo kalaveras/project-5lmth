@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drum aplication</title>
+    <link href="css/style.css" rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<h2>Fun Logo</h2>
+	<div class="">
+		<button onclick="window.location.href='index.html'"><</button>
+		<form action="" id="form_sign_up" class="" >
+			<label for="name">Username:</label><input type="text" id="user" value="" autofocus required>
+			<label for="name">Password:</label><input type="text" id="pass" value="" required>
+			<label for="tel">Phone: </label><input type="tel" title="Write a correct telephone number" placeholder="+34644464326" id="phone" >
+			<label for="email">Email:</label><input type="email" placeholder="alberto.perez.calleja@gmail.com" id="email" required>
+			<label for="birthday">Birthday:</label><input type="date" id="birthday" required><br>
+			<button type="submit" id="btn_sign_up" class="">Create new user and play</button>
+        </form>
+	</div>
+	<script src="js/general.js" charset="utf-8"></script>
+	<script>
+		document.getElementById("form_sign_up").addEventListener("submit", function(event){
+			event.preventDefault();
+			user_create_new();
+		});
+	</script>
+</body>
+</html>

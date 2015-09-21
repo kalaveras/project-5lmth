@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drum aplication</title>
+    <link href="css/style.css" rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<h2>Fun Logo</h2>
+	<div class="">
+		<form action="" id="form_login" class="" >
+			<label for="name">Username:</label><input type="text" id="user" value="" autofocus required>
+			<label for="name">Password:</label><input type="text" id="pass" value="" required>
+			<label> Remember me</label><input type="checkbox" id="remember_me" name="remember_me">
+			<button type="submit" id="btn_login" class="">Log In</button>
+        </form>
+		<button onclick="window.location.href='sign_up.html'">Sign up</button>
+
+	</div>
+	
+	<script src="js/user.js" charset="utf-8"></script>
+	<script src="js/common.js" charset="utf-8"></script>
+	<script>
+		window.addEventListener("load", function(){
+			//check_remember_me(); //check if we have to go directly to start page
+			if ( localStorage.getItem('app.remember_me') )
+		});
+		
+		document.getElementById("form_login").addEventListener("submit", function(event){
+			event.preventDefault();
+			var user = document.getElementById('user').value;
+			var pass = document.getElementById('pass').value;
+			if ( user_validate(user, pass) ) window.location.href='start.html';
+				else alert ('error: please try again');
+		});
+	</script>
+</body>
+</html>
