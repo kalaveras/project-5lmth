@@ -24,8 +24,7 @@
 	<script src="js/common.js" charset="utf-8"></script>
 	<script>
 		window.addEventListener("load", function(){
-			//check_remember_me(); //check if we have to go directly to start page
-			if ( localStorage.getItem('app.remember_me') )
+			if ( localStorage.getItem('app.remember_me') == 1 ) window.location.href='start.html';
 		});
 		
 		document.getElementById("form_login").addEventListener("submit", function(event){
