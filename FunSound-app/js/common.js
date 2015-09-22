@@ -4,8 +4,8 @@ Comments:
 Todo:	
 --*/
 
-function check_remember_me(){
-	document.getElementById('user').value;
-	localstorage
-	
+function remember_me(){
+	window.addEventListener("load", function(){
+		if ( localStorage.getItem('app.remember_me') == 1 ) window.location.href='start.html';
+	});
 }

@@ -23,10 +23,10 @@
 	<script src="js/user.js" charset="utf-8"></script>
 	<script src="js/common.js" charset="utf-8"></script>
 	<script>
-		window.addEventListener("load", function(){
-			if ( localStorage.getItem('app.remember_me') == 1 ) window.location.href='start.html';
-		});
+		remember_me();
+		user_initializeusers();
 		
+		// When user click de login button
 		document.getElementById("form_login").addEventListener("submit", function(event){
 			event.preventDefault();
 			var user = document.getElementById('user').value;
