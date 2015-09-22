@@ -6,10 +6,11 @@ Todo:	- integrate users info with firebase to see a huge social stats not only t
 
 function user_initializeusers(){
 	// initialize user management
-	for (var i=0,number = 0; i < localStorage.length ; i++)
-		if ( (/^app\.users.id/).test(localStorage.key(i)) ) number++; 
-	
-		//to know fastly how many users we have. Which is used in the next pages
+		//for now, is useless
+		for (var i=0,number = 0; i < localStorage.length ; i++)
+			if ( (/^app\.users.id/).test(localStorage.key(i)) ) number++; 
+		
+		//for now, is useless
 		localStorage.setItem('app.users.length', number);
 	
 		//to know what's the next id to assign
@@ -17,31 +18,25 @@ function user_initializeusers(){
 }
 
 function user_validate(user,pass){
-	//handle with remmeber me app feature
-	var remember_box = document.getElementById('remember_me');
-	
-	if ( remember_box.checked )	localStorage.setItem('app.remember_me', 1);
-		else localStorage.setItem('app.remember_me', 0);
-	
-	//
 	var user_storaged;
-	for (var i=0; i < localStorage.length ; i++){
-		if ( (/^app\.users.id/).test(localStorage.key(i)) ) {
-			//is a user key
-			user_storaged = JSON.parse( localStorage.getItem(localStorage.key(i)) );
+	
+	for (var i=0; i < localStorage.length ; i++){ 				// check in localstorage for the user keys
+		if ( (/^app\.users.id/).test(localStorage.key(i)) ) {	// only the user keys
+			user_storaged = JSON.parse( localStorage.getItem(localStorage.key(i)) );	//user keys are objects 
 			if ( user == user_storaged.name ){
 				//check password
-				if ( pass == user_storaged.pass ) return 1;
-					else return 0;
+				if ( pass == user_storaged.pass ) {
+					//handle with remember_me feature
+					var remember_box = document.getElementById('remember_me');
+					if ( remember_box.checked )	localStorage.setItem('app.remember_me', 1);
+						else localStorage.setItem('app.remember_me', 0);
+
+					return 1; //user and pass validated
+				} else return 0; // failure with the password
 			}
-		}
+		} 
 	}
-		
-		
-	
-	
-	return 1;
-	
+	return 0; // failure with the user name, or any user exists
 }
 
 function user_create_new(){ //todo: not allow same name as other user
