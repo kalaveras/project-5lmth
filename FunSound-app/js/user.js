@@ -31,6 +31,9 @@ function user_validate(user,pass){
 					if ( remember_box.checked )	localStorage.setItem('app.remember_me', 1);
 						else localStorage.setItem('app.remember_me', 0);
 
+					// to be able to access other pages
+					localStorage.setItem('app.currentuserid', user_storaged.id);
+					
 					return 1; //user and pass validated
 				} else return 0; // failure with the password
 			}
@@ -71,6 +74,9 @@ function user_create_new(){ //todo: not allow same name as other user
 	var userslength = localStorage.getItem('app.users.length');
 	userslength++;
 	localStorage.setItem('app.users.length', userslength);
+	
+	// to be able to access other pages
+	localStorage.setItem('app.currentuserid', user.id);
 	
 	return 1;
 }

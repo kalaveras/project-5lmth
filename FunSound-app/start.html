@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drum aplication</title>
+    <link href="css/style.css" rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div class="">
+		<button onclick="window.location.href='index.html'"><</button>
+		<button onclick="window.location.href='select.html'">Play</button>
+		<button onclick="window.location.href='user.html'">Profile</button>
+		<button onclick="window.location.href='stats.html'">Stats</button>
+		<button onclick="window.location.href='about.html'">About</button>
+	</div>
+	<script src="js/common.js" charset="utf-8"></script>
+	<script>
+		if ( !check_user_logged () ) window.location.href='index.html';
+	</script>
+</body>
+</html>
