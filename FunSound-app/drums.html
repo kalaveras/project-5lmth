@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drum aplication</title>
+    <link href="css/style.css" rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div class="">
+		<button onclick="window.location.href='pause.html'">II</button>
+		
+		<div class = "drums_object" id= "bass_drum" onclick="playPause(this)" > bass drum</div>
+		<div class = "drums_object" id= "floor_tom" onclick="playPause(this)" > floor tom</div>
+		<div class = "drums_object" id= "hanging_toms_left" onclick="playPause(this)" > hanging left</div>
+		<div class = "drums_object" id= "hanging_toms_rigth" onclick="playPause(this)" > hanging right</div>
+		<div class = "drums_object" id= "snare_drum" onclick="playPause(this)" >snare drum </div>
+		
+
+	</div>
+	<script src="js/drums.js" charset="utf-8"></script>
+	<script>
+		if ( !check_user_logged () ) window.location.href='index.html';
+	</script>
+</body>
+</html>
