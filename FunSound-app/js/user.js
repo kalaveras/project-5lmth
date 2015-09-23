@@ -26,7 +26,7 @@ function user_validate(user,pass){
 			if ( user == user_storaged.name ){
 				//check password
 				if ( pass == user_storaged.pass ) {
-					//handle with remember_me feature
+					//to remember_me feature
 					var remember_box = document.getElementById('remember_me');
 					if ( remember_box.checked )	localStorage.setItem('app.remember_me', 1);
 						else localStorage.setItem('app.remember_me', 0);
@@ -40,6 +40,8 @@ function user_validate(user,pass){
 }
 
 function user_create_new(){ //todo: not allow same name as other user
+	var nextid = localStorage.getItem('app.users.nextid');
+	
 	//Object that contains all the user information
 	var user = new Object();
 	user.name = document.getElementById('name').value;
@@ -47,9 +49,17 @@ function user_create_new(){ //todo: not allow same name as other user
 	user.phone = document.getElementById('phone').value;
 	user.email = document.getElementById('email').value;
 	user.birthday = document.getElementById('birthday').value;
+	user.id = nextid;
 
+	// ckeck if there an error with the user name
+	var user_storaged;
+	for (var i=0; i < localStorage.length ; i++) 				// check in localstorage for the user keys
+		if ( (/^app\.users.id/).test(localStorage.key(i)) ) {	// only the user keys
+			user_storaged = JSON.parse( localStorage.getItem(localStorage.key(i)) );	//user keys are objects 
+			if ( user.name == user_storaged.name )	return 0; // error with the username, choose another one
+		} 
+	
 	//save it as a new user
-	var nextid = localStorage.getItem('app.users.nextid');
 	var dir = "app.users.id" + nextid;
 	localStorage[ dir ] = JSON.stringify(user);
 	
@@ -61,4 +71,6 @@ function user_create_new(){ //todo: not allow same name as other user
 	var userslength = localStorage.getItem('app.users.length');
 	userslength++;
 	localStorage.setItem('app.users.length', userslength);
+	
+	return 1;
 }

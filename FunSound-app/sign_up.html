@@ -24,8 +24,8 @@
 	<script>
 		document.getElementById("form_sign_up").addEventListener("submit", function(event){
 			event.preventDefault();
-			user_create_new();
-			window.location.href='start.html'; 
+			if ( user_create_new() == 1 ) window.location.href='start.html'; 
+				else alert('Choose another username');
 		});
 	</script>
 </body>
