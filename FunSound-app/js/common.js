@@ -17,5 +17,6 @@ function check_user_logged (){
 
 function log_out (){
 	localStorage.removeItem('app.currentuserid');
+	localStorage.removeItem('app.remember_me');
 	window.location.href='index.html';
 }
