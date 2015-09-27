@@ -11,15 +11,31 @@
 	<div class="">
 		<button onclick="window.location.href='pause.html'">II</button>
 		
-		<div class = "drums_object" id= "bass_drum" onclick="playPause(this)" > bass drum</div>
-		<div class = "drums_object" id= "floor_tom" onclick="playPause(this)" > floor tom</div>
-		<div class = "drums_object" id= "hanging_toms_left" onclick="playPause(this)" > hanging left</div>
-		<div class = "drums_object" id= "hanging_toms_rigth" onclick="playPause(this)" > hanging right</div>
-		<div class = "drums_object" id= "snare_drum" onclick="playPause(this)" >snare drum </div>
+		<div class = "drums_object" id= "bass_drum" onclick="playPause(this)" > bass drum
+			<audio id = "audio1" src="audio/bass_drum.wav" ></audio>
+		</div>
+		
+		<div class = "drums_object" id= "floor_tom" onclick="playPause(this)" > floor tom
+			<audio id = "audio2" src="audio/floor_tom.wav" ></audio>
+		</div>
+			
+		<div class = "drums_object" id= "hanging_toms_left" onclick="playPause(this)" > hanging left
+			<audio id = "audio3" src="audio/hanging_toms_left.wav" ></audio>
+		</div>
+		
+		<div class = "drums_object" id= "hanging_toms_rigth" onclick="playPause(this)" > hanging right
+			<audio id = "audio4" src="audio/hanging_toms_rigth.wav" ></audio>
+		</div>
+			
+		<div class = "drums_object" id= "snare_drum" onclick="playPause(this)" >snare drum
+			<audio id = "audio5" src="audio/snare_drum.wav" ></audio>
+		</div>
+			
 		
 
 	</div>
 	<script src="js/drums.js" charset="utf-8"></script>
+	<script src="js/common.js" charset="utf-8"></script>
 	<script>
 		if ( !check_user_logged () ) window.location.href='index.html';
 	</script>
