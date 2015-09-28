@@ -10,11 +10,10 @@
 <body>
 	<img id="logo" src="images/logo.png">
 	<button onclick="window.location.href='start.html'" class="back_button"><img src="images/back_button.png" alt="Back button" width="32" height="32"></button>
+	<button onclick="log_out()" id="logout_button"><img src="images/logout.png" alt="Logout" width="32" height="32"></button>
 	<div class="selectors">
-		<button onclick="window.location.href='drums.html'">Drums</button>
-		<button onclick="window.location.href='gruitar.html'">Guitar</button>
-		
-		<button onclick="log_out()">Logout</button>
+		<button onclick="window.location.href='drums.html'" id="drums_button">Drums</button>
+		<button onclick="window.location.href='gruitar.html'" id="guitar_button">Guitar</button>
 	</div>
 	<script src="js/common.js" charset="utf-8"></script>
 	<script>

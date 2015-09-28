@@ -6,6 +6,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    outline: 0;
 }
 
 *:hover {
@@ -105,6 +106,17 @@ body {
 .back_button {
 	position: absolute;
 	left: 10px;
+	top: 15px;
+	background-color: transparent;
+	text-decoration: none;
+	border: none;
+	font-weight: bold;
+	font-size: 1.8em;
+}
+
+#logout_button {
+	position: absolute;
+	left: 265px;
 	top: 15px;
 	background-color: transparent;
 	text-decoration: none;

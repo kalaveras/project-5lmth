@@ -6,6 +6,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    outline: 0;
 }
 
 body {
@@ -29,8 +30,18 @@ body {
 
 .selectors {
 	padding-top: 35px;
-	padding-left: 20px;
+	padding-left: 50px;
 	display: inline-block;
     line-height: 30px;
 }
 
+#logout_button {
+	position: absolute;
+	left: 265px;
+	top: 15px;
+	background-color: transparent;
+	text-decoration: none;
+	border: none;
+	font-weight: bold;
+	font-size: 1.8em;
+}

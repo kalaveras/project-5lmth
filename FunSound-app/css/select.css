@@ -6,6 +6,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    outline: 0;
 }
 
 body {
@@ -30,7 +31,7 @@ body {
 .selectors {
 	position: relative;
 	left: 47px;
-	padding-top: 35px;
+	padding-top: 15px;
 	padding-left: 20px;
 	display: inline-block;
     line-height: 30px;
@@ -39,6 +40,36 @@ body {
 .back_button {
 	position: absolute;
 	left: 10px;
+	top: 15px;
+	background-color: transparent;
+	text-decoration: none;
+	border: none;
+	font-weight: bold;
+	font-size: 1.8em;
+}
+
+#drums_button {
+	background: url("../images/drums.png") top left no-repeat;
+	background-size: 64px;
+	width: 64px;
+	height: 64px;
+	border: none;
+	color: transparent;
+}
+
+#guitar_button {
+	background: url("../images/guitar.png") top left no-repeat;
+	background-size: 64px;
+	width: 64px;
+	height: 64px;
+	border: none;
+	color: transparent;
+	margin-left: 30px;
+}
+
+#logout_button {
+	position: absolute;
+	left: 265px;
 	top: 15px;
 	background-color: transparent;
 	text-decoration: none;
