@@ -49,9 +49,6 @@ function user_create_new(){
 	var user = new Object();
 	user.name = document.getElementById('name').value;
 	user.pass = document.getElementById('pass').value;
-	user.phone = document.getElementById('phone').value;
-	user.email = document.getElementById('email').value;
-	user.birthday = document.getElementById('birthday').value;
 	user.id = nextid;
 
 	// ckeck if there an error with the user name 

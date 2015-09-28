@@ -1,35 +1,52 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" manifest="drumz.appcache">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Drum aplication</title>
-    <link href="css/style.css" rel='stylesheet' type='text/css'>
+    <title>Drumz</title>
+    <link href="css/drums.css" rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-	<div class="">
-		<button onclick="window.location.href='pause.html'">II</button>
+	<div class="drums">
+		<button onclick="window.location.href='select.html'" class="back_button"><img src="images/back_button.png" alt="Back button" width="32" height="32"></button>
 		
-		<div class = "drums_object" id= "bass_drum" onclick="playPause(this)" > bass drum
+		<div class = "drums_object" id= "bass_drum1" onclick="playPause(this)" >.
+			<audio id = "audio1" src="audio/bass_drum.wav" ></audio>
+		</div>
+
+		<div class = "drums_object" id= "bass_drum2" onclick="playPause(this)" >.
 			<audio id = "audio1" src="audio/bass_drum.wav" ></audio>
 		</div>
 		
-		<div class = "drums_object" id= "floor_tom" onclick="playPause(this)" > floor tom
+		<div class = "drums_object" id= "floor_tom" onclick="playPause(this)" >.
 			<audio id = "audio2" src="audio/floor_tom.wav" ></audio>
 		</div>
 			
-		<div class = "drums_object" id= "hanging_toms_left" onclick="playPause(this)" > hanging left
+		<div class = "drums_object" id= "hanging_toms_left" onclick="playPause(this)" >.
 			<audio id = "audio3" src="audio/hanging_toms_left.wav" ></audio>
 		</div>
 		
-		<div class = "drums_object" id= "hanging_toms_rigth" onclick="playPause(this)" > hanging right
-			<audio id = "audio4" src="audio/hanging_toms_rigth.wav" ></audio>
+		<div class = "drums_object" id= "hanging_toms_right" onclick="playPause(this)" >.
+			<audio id = "audio4" src="audio/hanging_toms_right.wav" ></audio>
 		</div>
 			
-		<div class = "drums_object" id= "snare_drum" onclick="playPause(this)" >snare drum
+		<div class = "drums_object" id= "snare_drum" onclick="playPause(this)" >.
 			<audio id = "audio5" src="audio/snare_drum.wav" ></audio>
 		</div>
+
+		<div class = "drums_object" id= "hihat_left1" onclick="playPause(this)" >.
+			<audio id = "audio5" src="audio/hihat_left1.wav" ></audio>
+		</div>
+
+		<div class = "drums_object" id= "hihat_left2" onclick="playPause(this)" >.
+			<audio id = "audio5" src="audio/hihat_left2.wav" ></audio>
+		</div>
+
+		<div class = "drums_object" id= "hihat_right" onclick="playPause(this)" >.
+			<audio id = "audio5" src="audio/hihat_right.wav" ></audio>
+		</div>
+
 			
 		
 

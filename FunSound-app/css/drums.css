@@ -1,0 +1,114 @@
+* {
+	box-sizing: border-box;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+*:hover {
+	cursor: default;
+}
+
+body {
+	width: 320px;
+}
+
+body {
+	background: url("../images/bakgrund_320.png") no-repeat;
+	background-size: 320px 320px;
+}
+
+#bass_drum1 {
+	position: absolute;
+	left: 112px;
+	top: 223px;
+	width: 80px;
+	height: 52px;
+	color: transparent;
+}
+
+#bass_drum2 {
+	position: absolute;
+	left: 157px;
+	top: 200px;
+	width: 32px;
+	height: 60px;
+	color: transparent;
+}
+
+#floor_tom {
+	position: absolute;
+	left: 192px;
+	top: 182px;
+	width: 54px;
+	height: 36px;
+	color: transparent;
+}
+
+#hanging_toms_left {
+	position: absolute;
+	left: 122px;
+	top: 150px;
+	width: 40px;
+	height: 32px;
+	color: transparent;
+}
+
+#hanging_toms_right {
+	position: absolute;
+	left: 163px;
+	top: 148px;
+	width: 44px;
+	height: 32px;
+	color: transparent;
+}
+
+#snare_drum {
+	position: absolute;
+	top: 184px;
+	left: 101px;
+	width: 55px;
+	height: 38px;
+	color: transparent;
+}
+
+#hihat_left1 {
+	position: absolute;
+	left: 60px;
+	top: 150px;
+	width: 50px;
+	height: 32px;
+	color: transparent;
+}
+
+#hihat_left2 {
+	position: absolute;
+	left: 85px;
+	top: 285px;
+	width: 50px;
+	height: 30px;
+	color: transparent;
+}
+
+#hihat_right {
+	position: absolute;
+	top: 110px;
+	left: 190px;
+	width: 57px;
+	height: 34px;
+	color: transparent;
+}
+
+.back_button {
+	position: absolute;
+	left: 10px;
+	top: 15px;
+	background-color: transparent;
+	text-decoration: none;
+	border: none;
+	font-weight: bold;
+	font-size: 1.8em;
+}

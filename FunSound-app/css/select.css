@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+	width: 320px;
+}
+
+body {
+	background-image: url("../images/bakgrund_login_320.png");
+	background-size: 320px 320px;
+	background-repeat: no-repeat;
+	
+
+}
+#logo {
+	margin-left: 70px;
+	padding-top: 10px;
+	width: 50%;
+	height: 50%;
+	display: block;
+}
+
+.selectors {
+	position: relative;
+	left: 47px;
+	padding-top: 35px;
+	padding-left: 20px;
+	display: inline-block;
+    line-height: 30px;
+}
+
+.back_button {
+	position: absolute;
+	left: 10px;
+	top: 15px;
+	background-color: transparent;
+	text-decoration: none;
+	border: none;
+	font-weight: bold;
+	font-size: 1.8em;
+}

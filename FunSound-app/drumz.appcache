@@ -1,0 +1,19 @@
+CACHE MANIFEST
+audio/bass_drum.wav
+audio/floor_tom.wav
+audio/hanging_toms_left.wav
+audio/hanging_toms_right.wav
+audio/hihat_left1.wav
+audio/hihat_left2.wav
+audio/hihat_right.wav
+audio/snare_drum.wav
+images/logo.png
+image/back_button.png
+image/bakgrund_320.png
+image/bakgrund_login_320.png
+
+NETWORK
+index.html
+
+FALLBACK:
+/html/ /404.html

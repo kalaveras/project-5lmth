@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+	width: 320px;
+}
+
+body {
+	background-image: url("../images/bakgrund_login_320.png");
+	background-size: 320px 320px;
+	background-repeat: no-repeat;
+	
+
+}
+#logo {
+	margin-left: 70px;
+	padding-top: 10px;
+	width: 50%;
+	height: 50%;
+	display: block;
+}
+
+.selectors {
+	padding-top: 35px;
+	padding-left: 20px;
+	display: inline-block;
+    line-height: 30px;
+}
+

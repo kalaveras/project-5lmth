@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+	width: 320px;
+}
+
+body {
+	background-image: url("../images/bakgrund_login_320.png");
+	background-size: 320px 320px;
+	background-repeat: no-repeat;
+	
+
+}
+
+h2 {
+	position: relative;
+	left: -10px;
+	font-family: Helvetica;
+	text-align: center;
+	text-decoration: overline underline;
+}
+#logo {
+	margin-left: 70px;
+	padding-top: 10px;
+	width: 50%;
+	height: 50%;
+	display: block;
+}
+
+#form_sign_up {
+	margin: 15% auto;
+	padding-left: 10px;
+	padding-top: 15px;
+	display: inline-block;
+    line-height: 30px;
+}
+
+#name {
+	margin-left: 17px;
+}
+
+#pass {
+	margin-left: 20px;
+}
+
+.back_button {
+	position: absolute;
+	left: 10px;
+	top: 15px;
+	background-color: transparent;
+	text-decoration: none;
+	border: none;
+	font-weight: bold;
+	font-size: 1.8em;
+}
+
+.back_button:active {
+	text-decoration: none;
+	border: none;
+}
+
+#btn_sign_up {
+	background-image: url(../images/snare_drum.png) top left no-repeat;
+	text-decoration: none;
+	margin-left: 201px;
+}

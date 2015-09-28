@@ -1,0 +1,63 @@
+* {
+	box-sizing: border-box;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+body {
+	width: 320px;
+}
+
+body {
+	background-image: url("../images/bakgrund_login_320.png");
+	background-size: 320px 320px;
+	background-repeat: no-repeat;
+	
+
+}
+#logo {
+	margin-left: 70px;
+	padding-top: 10px;
+	width: 50%;
+	height: 50%;
+	display: block;
+}
+
+#form_login {
+	padding-top: 5px;
+	padding-left: 30px;
+	display: inline-block;
+    line-height: 30px;
+}
+
+#user {
+	margin-left: 5px;
+}
+
+#pass {
+	margin-left: 8px;
+}
+
+#btn_login {
+	position: relative;
+	top: -15px;
+}
+
+#btn_sign_up {
+	position: absolute;
+	left: 38px;
+	top: 283px;
+}
+
+#remember_me_label {
+	position: relative;
+	top: -8px;
+}
+
+#remember_me {
+	position: relative;
+	top: -3px;
+}
