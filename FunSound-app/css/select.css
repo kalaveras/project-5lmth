@@ -1,4 +1,5 @@
 * {
+	font-size: 16px;
 	box-sizing: border-box;
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -10,70 +11,145 @@
 }
 
 body {
-	width: 320px;
+	width: 100%;
 }
 
 body {
-	background-image: url("../images/bakgrund_login_320.png");
-	background-size: 320px 320px;
-	background-repeat: no-repeat;
-	
-
+	background: url("../images/background_480.png") top left no-repeat;
+	background-size: 100%;
 }
+
 #logo {
-	margin-left: 70px;
-	padding-top: 10px;
-	width: 50%;
-	height: 50%;
-	display: block;
+	width: 20%;
+	height: 20%;
+	position: relative;
+	top: 10%;
+	left: 37.9%;
 }
 
 .selectors {
-	position: relative;
-	left: 47px;
-	padding-top: 15px;
-	padding-left: 20px;
-	display: inline-block;
-    line-height: 30px;
+	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%, -50%);
+	color: #fff;
+    background:rgba(0,0,0,0.3);
+    padding: 1%;
+    margin-top: 4.5em;
+    border-radius: 1em;
+    width: 25%;
+    height: 25%;
 }
 
-.back_button {
-	position: absolute;
-	left: 10px;
-	top: 15px;
-	background-color: transparent;
-	text-decoration: none;
-	border: none;
-	font-weight: bold;
-	font-size: 1.8em;
-}
 
 #drums_button {
 	background: url("../images/drums.png") top left no-repeat;
-	background-size: 64px;
-	width: 64px;
-	height: 64px;
+	background-size: 90%;
+	float: left;
+	width: 49%;
+	height: 100%;
 	border: none;
 	color: transparent;
 }
 
 #guitar_button {
 	background: url("../images/guitar.png") top left no-repeat;
-	background-size: 64px;
-	width: 64px;
-	height: 64px;
+	background-size: 90%;
+	float: left;
+	margin-left: 1%;
+	width: 49%;
+	height: 100%;
 	border: none;
 	color: transparent;
-	margin-left: 30px;
 }
 
-#logout_button {
+.back_button {
 	position: absolute;
-	left: 265px;
-	top: 15px;
+	left: 0.625em;
+	top: 0.9375em;
 	background-color: transparent;
 	text-decoration: none;
 	border: none;
 	font-weight: bold;
 	font-size: 1.8em;
+}
+
+#logout_button {
+	position: absolute;
+	left: 90%;
+	top: 0.9375em;
+	background-color: transparent;
+	text-decoration: none;
+	border: none;
+	font-weight: bold;
+	font-size: 1.8em;
+}
+
+
+@media screen and (min-width: 720px) {
+
+	body {
+		background-image: url("../images/background_720.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	#logo {
+		width: 25%;
+		height: 25%;
+		position: relative;
+		top: 20px;
+		left: 36.4%;
+	}
+
+	#logout_button {
+		left: 92.5%
+	}
+
+	.selectors {
+		top: 60%;
+	}
+
+}
+
+
+@media screen and (min-width: 1080px) {
+
+	body {
+		background-image: url("../images/background_1080.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	#logo {
+		width: 25%;
+		height: 25%;
+		position: relative;
+		top: 20px;
+		left: 36.4%;
+	}
+
+	#logout_button {
+		left: 95%
+	}
+
+	.selectors {
+		top: 65%;
+	}
+
+}
+
+@media screen and (min-width: 1280px) {
+
+	#logout_button {
+		left: 96.5%;
+	}
+
+	button {
+		font-size: 1.1em;
+	}
+
+	.selectors {
+		top: 65%;
+	}
 }

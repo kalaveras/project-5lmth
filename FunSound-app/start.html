@@ -1,24 +1,26 @@
 <!DOCTYPE HTML>
 <html lang="en" manifest="drumz.appcache">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Drumz</title>
-    <link href="css/start.css" rel='stylesheet' type='text/css'>
-</head>
-
-<body>
-	<img id="logo" src="images/logo.png">
-	<button onclick="log_out()" id="logout_button"><img src="images/logout.png" alt="Logout" width="32" height="32"></button>
-	<div class="selectors">
-		<button onclick="window.location.href='select.html'">Play</button>
-		<button onclick="window.location.href='user.html'">Profile</button>
-		<button onclick="window.location.href='stats.html'">Stats</button>
-		<button onclick="window.location.href='about.html'">About</button>
-	</div>
-	<script src="js/common.js" charset="utf-8"></script>
-	<script>
-		if ( !check_user_logged () ) window.location.href='index.html';
-	</script>
-</body>
-</html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Drumz</title>
+        <link href="css/start.css" rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css">
+        </head>
+        <body>
+            <div class="cointaner">
+                <img id="logo" src="images/logo_720.png">
+                <button onclick="log_out()" id="logout_button"><img src="images/logout.png" alt="Logout" width="32" height="32"></button>
+                <div class="selectors">
+                    <button onclick="window.location.href='select.html'">Play</button>
+                    <button onclick="window.location.href='user.html'">Profile</button>
+                    <button onclick="window.location.href='stats.html'">Stats</button>
+                    <button onclick="window.location.href='about.html'">About</button>
+                </div>
+            </div>
+            <script src="js/common.js" charset="utf-8"></script>
+            <script>
+            if ( !check_user_logged () ) window.location.href='index.html';
+            </script>
+        </body>
+    </html>

@@ -1,4 +1,5 @@
 * {
+	font-size: 16px;
 	box-sizing: border-box;
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -14,99 +15,112 @@
 }
 
 body {
-	width: 320px;
+	width: 100%;
 }
 
 body {
-	background: url("../images/bakgrund_320.png") no-repeat;
-	background-size: 320px 320px;
+	background: url("../images/background_play_480.png") top left no-repeat;
+	background-size: 100%;
+}
+
+#drums_image {
+	position: absolute;
+	max-height: 80%;
+	max-width: 80%;
+	top: 60%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 #bass_drum1 {
 	position: absolute;
-	left: 112px;
-	top: 223px;
-	width: 80px;
-	height: 52px;
+	left: 42%;
+	top: 63%;
+	width: 13%;
+	height: 20%;
 	color: transparent;
 }
 
 #bass_drum2 {
 	position: absolute;
-	left: 157px;
-	top: 200px;
-	width: 32px;
-	height: 60px;
+	left: 49%;
+	top: 55%;
+	width: 6.5%;
+	height: 19%;
 	color: transparent;
 }
 
 #floor_tom {
 	position: absolute;
-	left: 192px;
-	top: 182px;
-	width: 54px;
-	height: 36px;
+	left: 56%;
+	top: 48.5%;
+	width: 9%;
+	height: 12%;
 	color: transparent;
 }
 
 #hanging_toms_left {
 	position: absolute;
-	left: 122px;
-	top: 150px;
-	width: 40px;
-	height: 32px;
+	left: 43%;
+	top: 37%;
+	width: 7.2%;
+	height: 11%;
 	color: transparent;
 }
 
 #hanging_toms_right {
 	position: absolute;
-	left: 163px;
-	top: 148px;
-	width: 44px;
-	height: 32px;
+	left: 50.5%;
+	top: 35.8%;
+	width: 8%;
+	height: 11%;
 	color: transparent;
 }
 
 #snare_drum {
 	position: absolute;
-	top: 184px;
-	left: 101px;
-	width: 55px;
-	height: 38px;
+	top: 48.5%;
+	left: 39.5%;
+	width: 9.2%;
+	height: 14%;
 	color: transparent;
 }
 
 #hihat_left1 {
 	position: absolute;
-	left: 60px;
-	top: 150px;
-	width: 50px;
-	height: 32px;
+	left: 31%;
+	top: 37%;
+	width: 10%;
+	height: 11%;
 	color: transparent;
 }
 
 #hihat_left2 {
 	position: absolute;
-	left: 85px;
-	top: 285px;
-	width: 50px;
-	height: 30px;
+	left: 35%;
+	top: 86%;
+	width: 10%;
+	height: 10%;
 	color: transparent;
 }
 
 #hihat_right {
 	position: absolute;
-	top: 110px;
-	left: 190px;
-	width: 57px;
-	height: 34px;
+	top: 22%;
+	left: 55.5%;
+	width: 10%;
+	height: 12%;
 	color: transparent;
 }
 
 .back_button {
 	position: absolute;
-	left: 10px;
-	top: 15px;
+	left: 0.625em;
+	top: 0.9375em;
 	background-color: transparent;
 	text-decoration: none;
 	border: none;
@@ -116,11 +130,52 @@ body {
 
 #logout_button {
 	position: absolute;
-	left: 265px;
-	top: 15px;
+	left: 90%;
+	top: 0.9375em;
 	background-color: transparent;
 	text-decoration: none;
 	border: none;
 	font-weight: bold;
 	font-size: 1.8em;
+}
+
+
+
+@media screen and (min-width: 720px) {
+
+
+	body {
+		background-image: url("../images/background_play_720.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	#logout_button {
+		left: 92.5%
+	}
+
+}
+
+
+@media screen and (min-width: 1080px) {
+
+
+	body {
+		background-image: url("../images/background_play_1080.jpg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	#logout_button {
+		left: 95%
+	}
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
+	#logout_button {
+		left: 96.5%;
+	}
 }

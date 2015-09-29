@@ -1,4 +1,5 @@
 * {
+	font-size: 16px;
 	box-sizing: border-box;
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -8,57 +9,130 @@
     user-select: none;
     outline: 0;
 }
+
 body {
-	width: 320px;
+	width: 100%;
 }
 
 body {
-	background-image: url("../images/bakgrund_login_320.png");
-	background-size: 320px 320px;
-	background-repeat: no-repeat;
-	
-
+	background: url("../images/background_480.png") top left no-repeat;
+	background-size: 100%;
 }
+
+button {
+	font-size: 0.8em;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	background: transparent;
+	font-weight: lighter;
+	padding: 0 5px;
+}
+
 #logo {
-	margin-left: 70px;
-	padding-top: 10px;
-	width: 50%;
-	height: 50%;
-	display: block;
+	width: 20%;
+	height: 20%;
+	position: relative;
+	top: 10%;
+	left: 37.9%;
 }
 
 #form_login {
-	padding-top: 5px;
-	padding-left: 30px;
-	display: inline-block;
-    line-height: 30px;
+	position: absolute;
+  	left: 50%;
+  	top: 55%;
+  	transform: translate(-50%, -50%);
+	color: #fff;
+    background:rgba(0,0,0,1);
+    line-height: 2em;
+    padding: 0.5em;
+    margin-top: 4.5em;
+    border-radius: 1em;
+}
+
+input[type="text"] {
+    width: 150px;
+}
+
+input[type="password"] {
+    width: 150px;
+}
+
+label {
+	font-size: 0.9em;
+	font-weight: lighter;
 }
 
 #user {
-	margin-left: 5px;
+	display: block;
+	float: right;
 }
 
 #pass {
-	margin-left: 8px;
+	float: right;
 }
 
 #btn_login {
 	position: relative;
-	top: -15px;
+	float: right;
+	left: 100%
+	top: 48%;
 }
 
 #btn_sign_up {
-	position: absolute;
-	left: 38px;
-	top: 283px;
+	position: relative;
+	float: right;
+	margin-right: 0.3125em;
+	
 }
 
-#remember_me_label {
-	position: relative;
-	top: -8px;
+
+
+
+@media screen and (min-width: 720px) {
+
+
+	body {
+		background-image: url("../images/background_720.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	#logo {
+		width: 25%;
+		height: 25%;
+		position: relative;
+		top: 20px;
+		left: 36.4%;
+	}
+
+	#form_login {
+	  	top: 65%;
+	    line-height: 1.9em;
+	}
+
 }
 
-#remember_me {
-	position: relative;
-	top: -3px;
+
+@media screen and (min-width: 1080px) {
+
+
+	body {
+		background-image: url("../images/background_1080.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	#logo {
+		width: 25%;
+		height: 25%;
+		position: relative;
+		top: 20px;
+		left: 36.5%;
+	}
+
+	#form_login {
+	  	top: 75%;
+	    line-height: 2em;
+	}
 }
