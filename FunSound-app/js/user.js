@@ -49,6 +49,9 @@ function user_create_new(){
 	var user = new Object();
 	user.name = document.getElementById('name').value;
 	user.pass = document.getElementById('pass').value;
+	user.score_drums = 0;
+	user.score_cymbals = 0;
+	user.score_total = 0;
 	user.id = nextid;
 
 	// ckeck if there an error with the user name 

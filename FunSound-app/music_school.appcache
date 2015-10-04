@@ -1,4 +1,7 @@
 CACHE MANIFEST
+#v2
+
+CACHE:
 audio/bass_drum.wav
 audio/floor_tom.wav
 audio/hanging_toms_left.wav
@@ -19,9 +22,11 @@ images/background_play_1080.jpg
 images/drums.png
 images/guitar.png
 images/trummor_trans_768.png
+images/portrait.png
 
-NETWORK
-index.html
 
 FALLBACK:
-/html/ /404.html
+# 404.html
+
+NETWORK:
+*

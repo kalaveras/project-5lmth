@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en" manifest="music_school.appcache">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Music School</title>
+        <link href="css/about.css" rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css">
+    </head>
+	<body>
+		<div class="cointaner">
+			<img id="logo" src="images/logo_720.png">
+			<button onclick="window.location.href='start.html'" class="back_button"><img src="images/back_button.png" alt="Back button" width="32" height="32"></button>
+            <button onclick="log_out()" id="logout_button"><img src="images/logout.png" alt="Logout" width="32" height="32"></button>
+			<div class="selectors">
+				<span>Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit veritus placerat per. </span>
+			</div>
+		</div>
+		<script src="js/common.js" charset="utf-8"></script>
+		<script>
+		if ( !check_user_logged () ) window.location.href='index.html';
+		</script>
+	</body>
+</html>
