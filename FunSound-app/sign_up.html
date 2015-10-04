@@ -1,23 +1,21 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" manifest="drumz.appcache">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Drum aplication</title>
-    <link href="css/style.css" rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Drumz</title>
+    <link href="css/sign_up.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css">
 </head>
 
 <body>
-	<h2>Fun Logo</h2>
-	<div class="">
-		<button onclick="window.location.href='index.html'"><</button>
+	<h2>Sign up</h2>
+	<div class="container">
+		<button onclick="window.location.href='index.html'" class="back_button"><img src="images/back_button.png" alt="Back button" width="32" height="32"></button>
 		<form action="" id="form_sign_up" class="" >
-			<label for="name">Username:</label><input type="text" id="name" value="" autofocus required>
-			<label for="pass">Password:</label><input type="text" id="pass" value="" required>
-			<label for="phone">Phone: </label><input type="tel" title="Write a correct telephone number" placeholder="+34644464326" id="phone" >
-			<label for="email">Email:</label><input type="email" placeholder="alberto.perez.calleja@gmail.com" id="email" ><!-- put required when finsih all the work-->
-			<label for="birthday">Birthday:</label><input type="date" id="birthday" ><br><!-- put required when finsih all the work-->
-			<button type="submit" id="btn_sign_up" class="">Create new user and play</button>
+			<label for="name">Username:</label><input type="text" id="name" value="" autofocus required><br>
+			<label for="pass">Password:</label><input type="password" id="pass" value="" required><br>
+			<button type="submit" id="btn_sign_up" class="submit">Submit</button>
         </form>
 	</div>
 	<script src="js/user.js" charset="utf-8"></script>

@@ -1,0 +1,11 @@
+body {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+}
+
+body {
+    background: url("../images/portrait.png") top left no-repeat;
+	background-size: 100%;
+	width: 100%;
+}

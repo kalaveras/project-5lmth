@@ -1,23 +1,23 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" manifest="drumz.appcache">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Drum aplication</title>
-    <link href="css/style.css" rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Drumz</title>
+    <link href="css/index.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css">
 </head>
 
 <body>
-	<h2>Fun Logo</h2>
-	<div class="">
+	<div class="container">
+	<p><img src="images/logo_720.png" alt="Logo" id="logo"></p>
 		<form action="" id="form_login" class="" >
-			<label for="name">Username:</label><input type="text" id="user" value="" autofocus required>
-			<label for="name">Password:</label><input type="text" id="pass" value="" required>
-			<label> Remember me</label><input type="checkbox" id="remember_me" name="remember_me">
+			<label>Username:</label><input type="text" id="user" value="" autofocus required><br>
+			<label>Password:</label><input type="password" id="pass" value="" required><br>
+			<label id="remember_me_label"> Remember me</label><input type="checkbox" id="remember_me" name="remember_me"><br>
 			<button type="submit" id="btn_login" class="">Log In</button>
+			<button onclick="window.location.href='sign_up.html'" id="btn_sign_up">Sign up</button>
         </form>
-		<button onclick="window.location.href='sign_up.html'">Sign up</button>
-
 	</div>
 	
 	<script src="js/user.js" charset="utf-8"></script>
@@ -31,8 +31,9 @@
 			var user = document.getElementById('user').value;
 			var pass = document.getElementById('pass').value;
 			if ( user_validate(user, pass) ) window.location.href='start.html';
-				else alert ('error: please try again');
+				else alert ('Wrong username or password, please try again');
 		});
 	</script>
+	<script>screen.lockOrientation('landscape');</script>
 </body>
 </html>
