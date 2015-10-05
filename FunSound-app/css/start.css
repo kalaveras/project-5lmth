@@ -13,6 +13,7 @@
 body {
 	background: url("../images/background_480.png") top left no-repeat;
 	background-size: 100%;
+	background-color: black;
 }
 
 #logo {
@@ -32,8 +33,10 @@ body {
     background:rgba(0,0,0,1);
     line-height: 2em;
     padding: 0.5em;
-    margin-top: 4.5em;
     border-radius: 1em;
+	border: 0.3em solid white;
+    max-height: 60%;
+	overflow: scroll;
 }
 
 button {

@@ -17,6 +17,7 @@
 body {
 	background: url("../images/background_play_480.png") top left no-repeat;
 	background-size: 100%;
+	background-color: black;
 }
 
 #drums_image {
