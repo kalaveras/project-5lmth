@@ -37,9 +37,9 @@ body {
     border-radius: 1em;
 	border: 0.3em solid white;
     max-height: 60%;
-	overflow: scroll;
-    width: 25%;
-    height: 25%;
+	overflow: auto;
+    width: 40%;
+    height: 35%;
 }
 
 
@@ -108,7 +108,7 @@ body {
 	}
 
 	.selectors {
-		top: 60%;
+		/*top: 60%;*/
 	}
 
 }
@@ -135,7 +135,7 @@ body {
 	}
 
 	.selectors {
-		top: 65%;
+		/*top: 65%;*/
 	}
 
 }
@@ -151,6 +151,6 @@ body {
 	}
 
 	.selectors {
-		top: 65%;
+		/*top: 65%;*/
 	}
 }

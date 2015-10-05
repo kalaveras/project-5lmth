@@ -46,7 +46,7 @@ button {
     border-radius: 1em;
 	border: 0.3em solid white;
     max-height: 60%;
-	overflow: scroll;
+	overflow: auto;
 }
 
 input[type="text"] {
