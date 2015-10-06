@@ -37,7 +37,7 @@ body {
     border-radius: 1em;
 	border: 0.3em solid white;
     max-height: 60%;
-	overflow: auto;
+	/*overflow: auto;*/
     width: 40%;
     height: 35%;
 }

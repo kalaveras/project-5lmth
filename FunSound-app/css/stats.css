@@ -37,7 +37,8 @@ body {
     border-radius: 1em;
 	border: 0.3em solid white;
     max-height: 60%;
-	overflow: auto;
+	/*overflow: auto;*/
+	text-align:center;
 }
 
 .black_box >span {
@@ -67,6 +68,147 @@ body {
 	border: none;
 	font-weight: bold;
 	font-size: 1.8em;
+}
+
+#stats_title {
+	font-size: 1.2em;
+	color: #fff;
+	font-weight: lighter;
+	padding: 0 5px;
+}
+
+.slider_button {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: 50%;
+	transform: translateY(50%);
+	border: solid red 1px;
+}
+#left {
+	float: left;
+	background: white;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	border: groove white 1px;
+}
+#right {
+	float: right;
+	background: url("../images/back_button.png") no-repeat;
+	border: groove white 1px;
+	background: white;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+#stats_container{
+	margin: 0px 55px; 
+	width: 10em;
+	max-height: 9em;
+}
+#scores{
+	overflow: auto;
+	max-height: 6em;
+}
+.row {
+	min-height: 4em;
+
+}
+
+
+
+#scores::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: black;
+}
+
+#scores::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: black;
+}
+
+#scores::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: black;
+  border: solid white 3px;
+}
+
+/*box_own_score style by http://www.bestcssbuttongenerator.com/*/
+#box_own_score {
+	background-color:#79bbff;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	
+	/*display:inline-block;*/
+	cursor:pointer;
+	color:#ffffff;
+	
+	padding:0px 15px;
+	text-decoration:none;
+	margin-bottom: 5px;
+	
+		-moz-box-shadow: 0px 10px 14px -7px #1564ad;
+	-webkit-box-shadow: 0px 10px 14px -7px #1564ad;
+	box-shadow: 0px 10px 14px -7px #1564ad;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5));
+	background:-moz-linear-gradient(top, #79bbff 5%, #378de5 100%);
+	background:-webkit-linear-gradient(top, #79bbff 5%, #378de5 100%);
+	background:-o-linear-gradient(top, #79bbff 5%, #378de5 100%);
+	background:-ms-linear-gradient(top, #79bbff 5%, #378de5 100%);
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5',GradientType=0);
+	border:1px solid #337bc4;
+	font-weight:bold;
+	text-shadow:0px 1px 0px #528ecc;
+}
+#box_own_score:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff));
+	background:-moz-linear-gradient(top, #378de5 5%, #79bbff 100%);
+	background:-webkit-linear-gradient(top, #378de5 5%, #79bbff 100%);
+	background:-o-linear-gradient(top, #378de5 5%, #79bbff 100%);
+	background:-ms-linear-gradient(top, #378de5 5%, #79bbff 100%);
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff',GradientType=0);
+	background-color:#378de5;
+}
+#box_own_score:active {
+	position:relative;
+	top:1px;
+}
+
+
+#box_score {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	
+	/*display:inline-block;*/
+	cursor:pointer;
+	color:#ffffff;
+	
+	padding:0px 15px;
+	text-decoration:none;
+	margin-bottom: 5px;
+	margin-right: 10px;
+		-moz-box-shadow: 0px 10px 14px -7px #ffffff;
+	-webkit-box-shadow: 0px 10px 14px -7px #ffffff;
+	box-shadow: 0px 10px 14px -7px #ffffff;
+	background: transparent;
+	border:1px solid #ffffff;
+	font-weight:bold;
+	text-shadow:0px 1px 0px #ffffff;
+}
+#box_score:hover {
+	background: transparent;
+}
+#box_score:active {
+	position:relative;
+	top:1px;
 }
 
 

@@ -31,29 +31,62 @@
 		<link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css">
 	</head>
 	<body>
-		<div class="cointaner">
-			<img id="logo" src="images/logo_720.png">
-			<button onclick="window.location.href='start.html'" class="back_button"><img src="images/back_button.png" alt="Back button" width="32" height="32"></button>
-            <button onclick="log_out()" id="logout_button"><img src="images/logout.png" alt="Logout" width="32" height="32"></button>
-			<div class="black_box">
-				<div id="name" class="name"> Ejemplo </div>
-				<div class="info"> 
-					<div class="md_50">
-						<span id="score_drums" >Drums: </span>
-						<span id="score_cymbals" >Cymbals: </span>
+		<img id="logo" src="images/logo_720.png">
+		<button onclick="window.location.href='start.html'" class="back_button"><img src="images/back_button.png" alt="Back button" width="32" height="32"></button>
+		<button onclick="log_out()" id="logout_button"><img src="images/logout.png" alt="Logout" width="32" height="32"></button>
+		<div class="black_box">
+		
+			<div id="stats_title" class="title"> HISCORES CYMBALS </div> <!-- se cambia por js solo --> 
+			
+			<div class="row">
+				<div class ="slider_button" id="left"> </div>
+				<div class ="slider_button" id="right"> </div>
+				
+				<div id = "stats_container" >
+					<div class="box_stats" id ="box_own_score"> <!--aqui meter la informacion del currentid por js--> 
+						<span id="pos" >-. </span>
+						<span id="name" >----</span>
+						<span id="score" >   </span>
 					</div>
-					<div class="md_50">
-						<span id="score_total">Total: </span>
-					</div>						
+					
+					<div id ="scores"> <!--usar esta id para rellenarla de cajas como el ejemplo actual --> 
+						<div class="box_stats" id ="box_score"> <!--borrar despues de hacer el js --> 
+							<span id="pos" >-. </span>
+							<span id="name" >----</span>
+							<span id="score" >   </span>
+						</div>
+						<div class="box_stats" id ="box_score"> <!--borrar despues de hacer el js --> 
+							<span id="pos" >-. </span>
+							<span id="name" >----</span>
+							<span id="score" >   </span>
+						</div>
+						<div class="box_stats" id ="box_score"> <!--borrar despues de hacer el js --> 
+							<span id="pos" >-. </span>
+							<span id="name" >----</span>
+							<span id="score" >   </span>
+						</div>
+						<div class="box_stats" id ="box_score"> <!--borrar despues de hacer el js --> 
+							<span id="pos" >-. </span>
+							<span id="name" >----</span>
+							<span id="score" >   </span>
+						</div>
+					</div>
 				</div>
 			</div>
+			
+			
+			
+
+		</div>
+			
+
 		</div>
 		<script src="js/common.js" charset="utf-8"></script>
-		<script src="js/profile.js" charset="utf-8"></script>
+		<script src="js/stats.js" charset="utf-8"></script>
 		<script>
 		if ( !check_user_logged () ) window.location.href='index.html';
 		var id = getUrlVars()["id"];
-		fill_profile_page(id);
+		/*fill_profile_page(id);*/
 		</script>
 	</body>
 </html>
