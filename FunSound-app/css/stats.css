@@ -36,7 +36,7 @@ body {
     padding: 0.5em;
     border-radius: 1em;
 	border: 0.3em solid white;
-    max-height: 60%;
+    /*max-height: 60%;*/
 	/*overflow: auto;*/
 	text-align:center;
 }

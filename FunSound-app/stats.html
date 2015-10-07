@@ -39,8 +39,8 @@
 			<div id="stats_title" ></div> <!-- se cambia por js solo --> 
 			
 			<div class="row">
-				<div class ="slider_button" id="left"> </div>
-				<div class ="slider_button" id="right"> </div>
+				<div class ="slider_button" id="left" onclick="change_tab('left')" > </div>
+				<div class ="slider_button" id="right" onclick="change_tab('right')"> </div>
 				
 				<div id = "stats_container" >
 					<div class="box_own_score" id ="box_own_score" onclick="my_profile_page()"> <!--aqui meter la informacion del currentid por js--> 
@@ -49,26 +49,11 @@
 						<span id="score" >   </span>
 					</div>
 					
-					<div id ="scores"> <!--usar esta id para rellenarla de cajas como el ejemplo actual --> 
-						<div class="box_score" id ="2" onclick="profile_page(this)"> <!--poner las id de los user concretos borrar despues de hacer el js --> 
+					<div id ="scores"> <!--fill with js --> 
+						<div class="box_score" id ="2" onclick="profile_page(this)"> <!--id is read to go to the proper profile page--> 
 							<span id="pos" >-. </span>
 							<span id="name" >----------</span>
 							<span id="score" > 999 </span>
-						</div>
-						<div class="box_score" id =""> <!--borrar despues de hacer el js --> 
-							<span id="pos" >-. </span>
-							<span id="name" >----</span>
-							<span id="score" >   </span>
-						</div>
-						<div class="box_score" id =""> <!--borrar despues de hacer el js --> 
-							<span id="pos" >-. </span>
-							<span id="name" >----</span>
-							<span id="score" >   </span>
-						</div>
-						<div class="box_score" id =""> <!--borrar despues de hacer el js --> 
-							<span id="pos" >-. </span>
-							<span id="name" >----</span>
-							<span id="score" >   </span>
 						</div>
 					</div>
 				</div>
@@ -84,20 +69,35 @@
 		<script src="js/common.js" charset="utf-8"></script>
 		<script src="js/stats.js" charset="utf-8"></script>
 		<script>
-		if ( !check_user_logged () ) window.location.href='index.html';
-		var users_by_total, users_by_drums, users_by_cymbals;
-		window.addEventListener("load", function(){
+			if ( !check_user_logged () ) window.location.href='index.html';
+			var users_by_total , users_by_drums, users_by_cymbals;
+			
 			var ordered_users =  order_users();
 			users_by_total = ordered_users[0];
 			users_by_drums = ordered_users[1];
 			users_by_cymbals = ordered_users[2];
-		});
-
 		
-		fill_total_stats();
-		/*
-			if drag and drop fill_cymbal
-		*/
+			function change_tab(arg1){ 
+				if (arg1 == 'left') //left button: 3=>2=>1=>3...
+					select_tab = (select_tab > 1)?select_tab-1:3;	
+				else if (arg1 == 'right')	//right button: 1=>2=>3=>1...
+					select_tab = (select_tab < 3)?select_tab+1:1;	
+					
+				refresh_stats();
+			}
+			function refresh_stats(){ // fill stats depend on selected_tab
+				if ( select_tab == 3 ) 
+					fill_cymbals_stats(users_by_cymbals);
+				else if ( select_tab == 2 )
+					fill_drums_stats(users_by_drums);	
+				else
+					fill_total_stats(users_by_total);
+			}
+
+			var select_tab = 1;
+			
+			refresh_stats();
+
 		</script>
 	</body>
 </html>

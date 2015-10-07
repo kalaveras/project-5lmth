@@ -5,7 +5,7 @@ Todo:
 --*/
 
 
-function fill_total_stats(){ 
+function fill_total_stats(users){ 
 	// put the title
 	var title = document.getElementById('stats_title');
 	title.innerHTML = "HIGH SCORE. TOTAL";
@@ -20,8 +20,57 @@ function fill_total_stats(){
 	own_score.innerHTML = "<span>" +  current_user.name + " :  " + current_user.score_total + "</span>";
 
 	// fill the rest
+	var rest_scores_box = document.getElementById('scores'); 
+	rest_scores_box.innerHTML = "";
+	for (var i=0; i < users.length ; i++)
+		rest_scores_box.innerHTML += template_score (users[i].id, i+1, users[i].name , users[i].score_total);
 	
+}
+function fill_drums_stats(users){ 
+	// put the title
+	var title = document.getElementById('stats_title');
+	title.innerHTML = "HIGH SCORE. DRUMS";
 	
+	// get the own user info
+	var current_user;
+	var dir = "app.users.id" + localStorage.getItem('app.currentuserid');
+	current_user = JSON.parse( localStorage.getItem( dir ) );	//user keys are objects 
+	
+	//fill with the own score
+	var own_score = document.getElementById('box_own_score');
+	own_score.innerHTML = "<span>" +  current_user.name + " :  " + current_user.score_drums + "</span>";
+
+	// fill the rest
+	var rest_scores_box = document.getElementById('scores'); 
+	rest_scores_box.innerHTML = "";
+	for (var i=0; i < users.length ; i++)
+		rest_scores_box.innerHTML += template_score (users[i].id, i+1, users[i].name , users[i].score_drums);
+	
+}
+function fill_cymbals_stats(users){ 
+	// put the title
+	var title = document.getElementById('stats_title');
+	title.innerHTML = "HIGH SCORE. CYMBALS";
+	
+	// get the own user info
+	var current_user;
+	var dir = "app.users.id" + localStorage.getItem('app.currentuserid');
+	current_user = JSON.parse( localStorage.getItem( dir ) );	//user keys are objects 
+	
+	//fill with the own score
+	var own_score = document.getElementById('box_own_score');
+	own_score.innerHTML = "<span>" +  current_user.name + " :  " + current_user.score_cymbals + "</span>";
+
+	// fill the rest
+	var rest_scores_box = document.getElementById('scores'); 
+	rest_scores_box.innerHTML = "";
+	for (var i=0; i < users.length ; i++)
+		rest_scores_box.innerHTML += template_score (users[i].id, i+1, users[i].name , users[i].score_cymbals);
+	
+}
+
+function template_score(id, pos,name,score){
+	return "<div class='box_score' id ='" + id + "' onclick='profile_page(this)'><span>" +pos + ". "+  name + " :  " + score + "</span></div>" ;
 }
 
 function order_users() {
