@@ -36,36 +36,36 @@
 		<button onclick="log_out()" id="logout_button"><img src="images/logout.png" alt="Logout" width="32" height="32"></button>
 		<div class="black_box">
 		
-			<div id="stats_title" class="title"> HISCORES CYMBALS </div> <!-- se cambia por js solo --> 
+			<div id="stats_title" ></div> <!-- se cambia por js solo --> 
 			
 			<div class="row">
 				<div class ="slider_button" id="left"> </div>
 				<div class ="slider_button" id="right"> </div>
 				
 				<div id = "stats_container" >
-					<div class="box_stats" id ="box_own_score"> <!--aqui meter la informacion del currentid por js--> 
+					<div class="box_own_score" id ="box_own_score" onclick="my_profile_page()"> <!--aqui meter la informacion del currentid por js--> 
 						<span id="pos" >-. </span>
 						<span id="name" >----</span>
 						<span id="score" >   </span>
 					</div>
 					
 					<div id ="scores"> <!--usar esta id para rellenarla de cajas como el ejemplo actual --> 
-						<div class="box_stats" id ="box_score"> <!--borrar despues de hacer el js --> 
+						<div class="box_score" id ="2" onclick="profile_page(this)"> <!--poner las id de los user concretos borrar despues de hacer el js --> 
+							<span id="pos" >-. </span>
+							<span id="name" >----------</span>
+							<span id="score" > 999 </span>
+						</div>
+						<div class="box_score" id =""> <!--borrar despues de hacer el js --> 
 							<span id="pos" >-. </span>
 							<span id="name" >----</span>
 							<span id="score" >   </span>
 						</div>
-						<div class="box_stats" id ="box_score"> <!--borrar despues de hacer el js --> 
+						<div class="box_score" id =""> <!--borrar despues de hacer el js --> 
 							<span id="pos" >-. </span>
 							<span id="name" >----</span>
 							<span id="score" >   </span>
 						</div>
-						<div class="box_stats" id ="box_score"> <!--borrar despues de hacer el js --> 
-							<span id="pos" >-. </span>
-							<span id="name" >----</span>
-							<span id="score" >   </span>
-						</div>
-						<div class="box_stats" id ="box_score"> <!--borrar despues de hacer el js --> 
+						<div class="box_score" id =""> <!--borrar despues de hacer el js --> 
 							<span id="pos" >-. </span>
 							<span id="name" >----</span>
 							<span id="score" >   </span>
@@ -85,8 +85,19 @@
 		<script src="js/stats.js" charset="utf-8"></script>
 		<script>
 		if ( !check_user_logged () ) window.location.href='index.html';
-		var id = getUrlVars()["id"];
-		/*fill_profile_page(id);*/
+		var users_by_total, users_by_drums, users_by_cymbals;
+		window.addEventListener("load", function(){
+			var ordered_users =  order_users();
+			users_by_total = ordered_users[0];
+			users_by_drums = ordered_users[1];
+			users_by_cymbals = ordered_users[2];
+		});
+
+		
+		fill_total_stats();
+		/*
+			if drag and drop fill_cymbal
+		*/
 		</script>
 	</body>
 </html>

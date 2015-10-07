@@ -23,7 +23,10 @@ function log_out (){
 
 function my_profile_page (){
 	var dir = "profile.html?id=" + localStorage.getItem('app.currentuserid');
-	
+	window.location.href= dir;
+}
+function profile_page (elem){
+	var dir = "profile.html?id=" + elem.id;
 	window.location.href= dir;
 }
 
