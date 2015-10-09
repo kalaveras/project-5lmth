@@ -27,14 +27,6 @@ h2 {
 	text-decoration: overline underline;
 }
 
-button {
-	font-size: 0.9em;
-	color: #fff;
-	border: none;
-	background: transparent;
-	font-weight: lighter;
-	padding: 0 5px;
-}
 
 #form_sign_up {
 	position: absolute;
@@ -86,10 +78,28 @@ input[type="password"] {
 	border: none;
 }
 
-#btn_sign_up {
-	text-decoration: none;
+#btn_sign_up  {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	
+	cursor:pointer;
+	color:#ffffff;
+	
+	padding:0px 15px;
+	text-decoration:none;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	-moz-box-shadow: 0px 10px 14px -7px #ffffff;
+	-webkit-box-shadow: 0px 10px 14px -7px #ffffff;
+	box-shadow: 0px 10px 14px -7px #ffffff;
+	background: transparent;
+	border:1px solid #ffffff;
+	font-weight: lighter;
+	text-shadow:0px 1px 0px #ffffff;
+	width: 45%;
 	float: right;
-	margin-top: 0.4em;
+	height: 2em;
 }
 
 
