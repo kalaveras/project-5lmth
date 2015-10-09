@@ -31,7 +31,7 @@
 		<link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css">
 	</head>
 	<body>
-		<img id="logo" src="images/logo_720.png">
+		<img id="logo" src="images/logo_720.png" alt="logo">
 		<button onclick="window.location.href='start.html'" class="back_button"><img src="images/back_button.png" alt="Back button" width="32" height="32"></button>
 		<button onclick="log_out()" id="logout_button"><img src="images/logout.png" alt="Logout" width="32" height="32"></button>
 		<div class="black_box">
@@ -50,11 +50,6 @@
 					</div>
 					
 					<div id ="scores"> <!--fill with js --> 
-						<div class="box_score" id ="2" onclick="profile_page(this)"> <!--id is read to go to the proper profile page--> 
-							<span id="pos" >-. </span>
-							<span id="name" >----------</span>
-							<span id="score" > 999 </span>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -64,8 +59,6 @@
 
 		</div>
 			
-
-		</div>
 		<script src="js/common.js" charset="utf-8"></script>
 		<script src="js/stats.js" charset="utf-8"></script>
 		<script>
