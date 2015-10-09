@@ -1,7 +1,18 @@
 CACHE MANIFEST
-#v2
+#v3
 
 CACHE:
+404.html
+about.html
+drums.html
+guitar.html
+index.html
+profile.html
+select.html
+
+start.html
+stats.html
+
 audio/bass_drum.wav
 audio/floor_tom.wav
 audio/hanging_toms_left.wav
@@ -10,7 +21,23 @@ audio/hihat_left1.wav
 audio/hihat_left2.wav
 audio/hihat_right.wav
 audio/snare_drum.wav
-images/logo_720.png
+
+css/about.css
+css/drums.css
+css/index.css
+css/portrait.css
+css/profile.css
+css/select.css
+css/sign_up.css
+css/start.css
+css/stats.css
+
+js/common.js
+js/drums.js
+js/profile.js
+js/stats.js
+js/user.js
+
 images/back_button.png
 images/logout.png
 images/background_480.png
@@ -21,12 +48,13 @@ images/background_play_720.png
 images/background_play_1080.jpg
 images/drums.png
 images/guitar.png
-images/trummor_trans_768.png
+images/logo_720.png
+images/logout.png
 images/portrait.png
-
+images/trummor_trans_768.png
 
 FALLBACK:
-# 404.html
+/ 404.html
 
 NETWORK:
 *
