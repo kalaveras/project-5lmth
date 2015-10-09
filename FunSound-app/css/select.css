@@ -17,7 +17,10 @@ body {
 	background-size: 100%;
 	background-color: black;
 }
-
+.md_2{
+	width: 49%;
+	float: left;
+}
 #logo {
 	width: 20%;
 	height: 20%;
@@ -39,29 +42,36 @@ body {
     max-height: 60%;
 	/*overflow: auto;*/
     width: 40%;
-    height: 35%;
+	text-align: center;
 }
-
-
-#drums_button {
-	background: url("../images/drums.png") top left no-repeat;
-	background-size: 90%;
-	float: left;
-	width: 49%;
-	height: 100%;
-	border: none;
-	color: transparent;
+a.image_container img {
+    width: 85%;
+	opacity: 0;
+	
+	-webkit-animation: img_animation 2000ms linear infinite;
+	animation: img_animation 2000ms linear infinite;
 }
-
-#guitar_button {
-	background: url("../images/guitar.png") top left no-repeat;
-	background-size: 90%;
-	float: left;
-	margin-left: 1%;
-	width: 49%;
-	height: 100%;
-	border: none;
-	color: transparent;
+@keyframes img_animation {
+	0%{
+		transform: scale(0.6);
+		opacity: 0.5;
+	}
+	25%{
+		transform: scale(1);
+		opacity: 1;
+	}
+	50%{
+		transform: scale(0.6);
+		opacity: 0.5;
+	}
+	75%{
+		transform: scale(1);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(0.6);
+		opacity: 0.5;		
+	}
 }
 
 .back_button {

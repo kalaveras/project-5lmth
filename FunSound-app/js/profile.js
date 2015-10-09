@@ -19,6 +19,6 @@ function fill_profile_page(id){
 	name_element.innerHTML = user_storaged.name;
 	score_cymbals_element.innerHTML += user_storaged.score_cymbals;
 	score_drums_element.innerHTML += user_storaged.score_drums;
-	score_total_element.innerHTML += user_storaged.score_total;
+	score_total_element.innerHTML = user_storaged.score_total;
 	
 }

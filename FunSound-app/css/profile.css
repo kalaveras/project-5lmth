@@ -16,7 +16,14 @@ body {
 	background-size: 100%;
 	background-color: black;
 }
-
+.md_50{
+	width: 50%;
+	float: left;
+}
+.md_3{
+	width: 33%;
+	float: left;
+}
 #logo {
 	width: 20%;
 	height: 20%;
@@ -32,20 +39,17 @@ body {
   	transform: translate(-50%, -50%);
 	color: #fff;
     background:rgba(0,0,0,1);
-    line-height: 2em;
+    line-height: 1.3em;
     padding: 0.5em;
     border-radius: 1em;
 	border: 0.3em solid white;
     max-height: 60%;
 	/*overflow: auto;*/
+	text-align: center;
+	font-size: 1.2em;
 }
 
-.black_box >span {
-	font-size: 0.8em;
-	color: #fff;
-	font-weight: lighter;
-	padding: 0 5px;
-}
+
 
 #logout_button {
 	position: absolute;
@@ -67,6 +71,12 @@ body {
 	border: none;
 	font-weight: bold;
 	font-size: 1.8em;
+}
+.name {
+	font-size: 1.2em;
+	color: #fff;
+	font-weight: lighter;
+	padding: 0 5px;
 }
 
 

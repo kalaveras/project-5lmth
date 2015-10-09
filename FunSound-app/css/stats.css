@@ -16,7 +16,9 @@ body {
 	background-size: 100%;
 	background-color: black;
 }
-
+#md_50{
+	width: 50%;
+}
 #logo {
 	width: 20%;
 	height: 20%;
